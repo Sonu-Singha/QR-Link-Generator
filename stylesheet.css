@@ -1,0 +1,13 @@
+/* CODE STARTS FROM HeRe */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(68deg, #8aa1e6, #0038ad);
+    height: 100vh;
+    width: 100vw;
+}
