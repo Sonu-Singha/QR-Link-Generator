@@ -6,8 +6,178 @@
     margin: 0;
 }
 
-body{
-    background: linear-gradient(68deg, #8aa1e6, #0038ad);
+body {
+    background-image: url("/Utility Folder/BG_IMG_Makima.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------MAIN BOX CODE CONTENT */
+
+
+.Main_Box {
+    /* border: 2px solid red; */
+    height: 99vh;
+    width: 68vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main_QR_Box {
+    /* border: 1px solid black; */
+    height: 76vh;
+    width: 50vw;
+    background-color: rgb(95 124 193 / 83%);
+    border-radius: 20px;
+    box-shadow: 0 20px 56px rgba(0, 0, 0, 0.2);
+    ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* QR Text Title Section */
+
+.QR_Text_Container {
+    /* border: 1px solid red; */
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+}
+
+.QR_Text {
+    /* border: 1px solid green; */
+    color: #212121;
+    font-size: 35px;
+    font-weight: 550;
+}
+
+/* QR Short Note Section */
+
+.Text_Note_Container {
+    /* border: 1px solid red; */
+    height: auto;
+    width: 82%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #222222;
+}
+
+.Text_Note {
+    /* border: 1px solid green; */
+    font-size: 14.5px;
+    text-align: center;
+}
+
+/* QR URL Section */
+
+.URL_Section {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50px;
+}
+
+.URL_Area {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#URL_Input {
+    /* border: 1px solid green; */
+    height: 42px;
+    width: 91%;
+    outline: none;
+    border: none;
+    background-color: #000000;
+    border-radius: 7px;
+    padding-left: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+/* Expiration Select Section */
+
+.Select_Section {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Select_Area {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Select_Expiry {
+    /* border: 1px solid green; */
+    height: 42px;
+    width: 92.5%;
+    outline: none;
+    border: none;
+    background-color: #000000;
+    color: #7e7e7e;
+    border-radius: 7px;
+    padding-left: 6px;
+    font-size: 14px;
+}
+
+/* Generate Button Section */
+
+.Generate_Container {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 75px;
+    font-family: sans-serif;
+}
+
+.Generate_Area {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Generate_Btn {
+    /* border: 1px solid green; */
+    height: 50px;
+    width: 175px;
+    font-size: 16px;
+    border-radius: 11px;
+    color: #bdbdbd;
+    background-color: #212121;
+    font-weight: bold;
+}
+
+#Generate_Btn:hover {
+    cursor: pointer;
+    background-color: #000000;
 }
