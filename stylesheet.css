@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("/Utility Folder/BG_IMG_Makima.jpg");
+    background-image: url("./Utility Folder/BG_IMG_Makima.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,7 +15,11 @@ body {
     width: 100vw;
 }
 
-
+.Main_Box_Container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 
 
@@ -174,10 +178,165 @@ body {
     border-radius: 11px;
     color: #bdbdbd;
     background-color: #212121;
+    border: none;
     font-weight: bold;
 }
 
 #Generate_Btn:hover {
     cursor: pointer;
     background-color: #000000;
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------SIDE TOOL CODE SECTION */
+
+.Side_Tool_Box {
+    /* border: 2px solid black; */
+    height: 99vh;
+    width: 30vw;
+}
+
+/* History Button Section */
+
+.Tool_Container {
+    /* border: 1px solid red; */
+    height: 45px;
+    width: 100%;
+}
+
+.History_Area {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* gap: 2px; */
+    justify-content: end;
+    align-items: center;
+}
+
+#History_Img {
+    /* border: 1px solid black; */
+    height: 35px;
+    width: 35px;
+}
+
+#History_Btn {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 22px;
+    width: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #212121;
+    color: white;
+    outline: none;
+}
+
+#History_Btn:hover {
+    cursor: pointer;
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------POP-UP PAGE SECTION */
+
+.Pop-Up_Section {
+    /* border: 1px solid red; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    display: none;
+    display: flex;
+}
+
+/* QR History Section */
+
+.QR_History {
+    /* border: 1px solid white; */
+    height: 86vh;
+    width: 33vw;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.QR_Title_Tag_Container {
+    /* border: 1px solid blue; */
+    height: 85px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.QR_History_Title {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #dadada;
+}
+
+.QR_History_Tagline {
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 89%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c8c8c8;
+    font-size: 14px;
+}
+
+.QR_History_Codes {
+    /* border: 1px solid red; */
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* QR History Codes */
+
+.History_QR_Code_A {
+    border: 1px solid yellow;
+    height: 45px;
+    width: 95%;
+    position: relative;
+    top: 10px;
+}
+
+.History_QR_Code_B {
+    border: 1px solid yellow;
+    height: 45px;
+    width: 95%;
+    position: relative;
+    top: 10px;
 }

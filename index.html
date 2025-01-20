@@ -10,63 +10,82 @@
 
 <body>
 
-    <div class="Main_Box">
-        <div class="Main_QR_Box">
+    <div class="Main_Box_Container">
 
-            <div class="QR_Text_Container">
+        <div class="Main_Box">
+            <div class="Main_QR_Box">
 
-                <span class="QR_Text">
-                    QR Link Generator
-                </span>
+                <div class="QR_Text_Container">
+
+                    <span class="QR_Text">
+                        QR Link Generator
+                    </span>
+
+                </div>
+
+
+                <div class="Text_Note_Container">
+
+                    <span class="Text_Note">
+                        Enter a URL, set an expiry and generate a QR code instantly--perfect for sharing anywhere!
+                    </span>
+
+                </div>
+
+                <div class="URL_Section">
+
+                    <span class="URL_Area">
+                        <input type="url" id="URL_Input" placeholder="Enter your URL">
+                    </span>
+
+                </div>
+
+
+                <div class="Select_Section">
+
+                    <span class="Select_Area">
+
+                        <select name="Select_Expiry" id="Select_Expiry">
+                            <option value="1">Expires in 1 minutes</option>
+                            <option value="10">Expires in 10 minutes</option>
+                            <option value="60">Expires in 60 minutes</option>
+                            <option value="1440">Expires in 1 day</option>
+                            <option value="10080">Expires in 1 week</option>
+                            <option value="lifetime">Lifetime</option>
+                        </select>
+
+                    </span>
+
+                </div>
+
+
+                <div class="Generate_Container">
+
+                    <span class="Generate_Area">
+
+                        <button type="button" id="Generate_Btn">
+                            Generate QR Code
+                        </button>
+
+                    </span>
+
+                </div>
 
             </div>
-
-            
-            <div class="Text_Note_Container">
-
-                <span class="Text_Note">
-                    Enter a URL, set an expiry and generate a QR code instantly--perfect for sharing anywhere!
-                </span>
-
-            </div>
-
-            <div class="URL_Section">
-
-                <span class="URL_Area">
-                    <input type="url" id="URL_Input" placeholder="Enter your URL">
-                </span>
-
-            </div>
+        </div>
 
 
-            <div class="Select_Section">
-
-                <span class="Select_Area">
-
-                    <select name="Select_Expiry" id="Select_Expiry">
-                        <option value="1">Expires in 1 minutes</option>
-                        <option value="10">Expires in 10 minutes</option>
-                        <option value="60">Expires in 60 minutes</option>
-                        <option value="1440">Expires in 1 day</option>
-                        <option value="10080">Expires in 1 week</option>
-                        <option value="lifetime">Lifetime</option>
-                    </select>
-
-                </span>
-
-            </div>
 
 
-            <div class="Generate_Container">
 
-                <span class="Generate_Area">
-
-                    <button type="button" id="Generate_Btn">
-                        Generate QR Code
+        <div class="Side_Tool_Box">
+            <div class="Tool_Container">
+                <span class="History_Area">
+                    <img src="./Utility Folder/History.svg" id="History_Img" alt="History">
+                    <button type="button" id="History_Btn">
+                        History
                     </button>
-
                 </span>
-                
             </div>
 
 
@@ -74,10 +93,43 @@
 
 
         </div>
+
     </div>
 
+    <div class="Pop-Up_Section">
+
+        <div class="QR_History">
+
+            <div class="QR_Title_Tag_Container">
+
+                <div class="QR_History_Title">
+                    QR Code History
+                </div>
+
+                <div class="QR_History_Tagline">
+                    Here are your previously generated QR codes:
+                </div>
+
+            </div>
+
+            <div class="QR_History_Codes">
+
+                <div class="History_QR_Code_A">
+
+                </div>
+                <div class="History_QR_Code_B">
+
+                </div>
+
+            </div>
+
+        </div>
 
 
+
+
+
+    </div>
 
     <script src="script.js"></script>
 </body>
