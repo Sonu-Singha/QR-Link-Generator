@@ -45,7 +45,6 @@ body {
     background-color: rgb(95 124 193 / 83%);
     border-radius: 20px;
     box-shadow: 0 20px 56px rgba(0, 0, 0, 0.2);
-    ;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -265,7 +264,7 @@ body {
     align-items: center;
     z-index: 10;
     display: none;
-    display: flex;
+    /* display: flex; */
 }
 
 /* QR History Section */
@@ -280,6 +279,7 @@ body {
     justify-content: space-evenly;
     flex-direction: column;
     border-radius: 15px;
+    box-shadow: 0 8px 82px rgb(0 0 0 / 20%);
 }
 
 .QR_Title_Tag_Container {
@@ -312,7 +312,7 @@ body {
 }
 
 .QR_History_Codes {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     height: 400px;
     width: 100%;
     display: flex;
@@ -331,12 +331,78 @@ body {
     width: 95%;
     position: relative;
     top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-.History_QR_Code_B {
-    border: 1px solid yellow;
-    height: 45px;
-    width: 95%;
+.QR_Code_List {
+    border: 1px solid white;
+    height: 43px;
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.QR_Code_1 {
+    border: 1px solid green;
+    width: 100%;
+    font-family: sans-serif;
+    color: #c8c8c8;
+    font-size: 15px;
+}
+
+.QR_Code_Remove_Button {
+    /* border: 1px solid white; */
+    height: 43px;
+    width: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.QR_Remove_Btn {
+    /* border: 1px solid green; */
+    /* height: 100%; */
+    /* width: 80%; */
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #dadada;
+}
+
+.QR_Remove_Btn:hover {
+    cursor: pointer;
+    color: #c5c5c5;
+}
+
+/* History Section Close Section */
+
+.QR_History_Close_Container {
+    /* border: 1px solid white; */
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    top: 10px;
+    bottom: 200px;
+    left: 15px;
+}
+
+#Close_Button {
+    /* border: 1px solid red; */
+    height: 46px;
+    width: 42px;
+    font-size: 45px;
+    background: none;
+    color: #ff0000;
+    outline: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Close_Button:hover {
+    cursor: pointer;
+    color: #ff5454;
 }
