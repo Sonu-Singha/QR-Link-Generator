@@ -46,12 +46,12 @@
                     <span class="Select_Area">
 
                         <select name="Select_Expiry" id="Select_Expiry">
-                            <option value="1">Expires in 1 minutes</option>
-                            <option value="10">Expires in 10 minutes</option>
-                            <option value="60">Expires in 60 minutes</option>
-                            <option value="1440">Expires in 1 day</option>
-                            <option value="10080">Expires in 1 week</option>
-                            <option value="lifetime">Lifetime</option>
+                            <option class="Select_Options" value="1">Expires in 1 minutes</option>
+                            <option class="Select_Options" value="10">Expires in 10 minutes</option>
+                            <option class="Select_Options" value="60">Expires in 60 minutes</option>
+                            <option class="Select_Options" value="1440">Expires in 1 day</option>
+                            <option class="Select_Options" value="10080">Expires in 1 week</option>
+                            <option class="Select_Options" value="lifetime">Lifetime</option>
                         </select>
 
                     </span>
@@ -116,14 +116,31 @@
 
                 <div class="History_QR_Code_A">
 
-                </div>
-                <div class="History_QR_Code_B">
+                    <div class="QR_Code_List">
+
+                        <span class="QR_Code_1">
+                            QR Code Lorem, ipsum dolor euta eaque nam.
+                        </span>
+
+                    </div>
+
+                    <div class="QR_Code_Remove_Button">
+
+                        <span class="QR_Remove_Btn">&times;</span>
+
+                    </div>
 
                 </div>
 
             </div>
 
         </div>
+
+        <span class="QR_History_Close_Container">
+
+            <button type="button" id="Close_Button">&times;</button>
+
+        </span>
 
 
 
