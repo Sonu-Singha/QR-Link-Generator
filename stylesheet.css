@@ -39,8 +39,9 @@ body {
 }
 
 .Main_QR_Box {
-    /* border: 1px solid black; */
-    height: 76vh;
+    border: 1px solid black;
+    /* height: 95vh; */
+    height: 75vh;
     width: 50vw;
     background-color: rgb(95 124 193 / 83%);
     border-radius: 20px;
@@ -49,7 +50,8 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 2.5vh;
+    /* gap: 1.5vh; */
 }
 
 /* QR Text Title Section */
@@ -154,6 +156,7 @@ body {
 /* Generate Button Section */
 
 .Generate_Container {
+    /* display: none; */
     /* border: 1px solid red; */
     width: 100%;
     height: 75px;
@@ -185,6 +188,73 @@ body {
     cursor: pointer;
     background-color: #000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------QR CODE GENERATION SECTION */
+
+.Display_QR_Code_Container {
+    /* border: 2px solid #212121; */
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    display: none;
+    /* display: flex; */
+}
+
+.QR_View_Area{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 27px;
+}
+
+.QrCode{
+    /* border-radius: 52px; */
+    /* filter: invert(100%); */
+    height: 100%;
+    width: 75%;
+}
+
+.QrDWNLD{
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Qr_Download_Button{
+    /* border: 1px solid black; */
+    border: none;
+    height: 40px;
+    width: 26px;
+    background: none;
+    font-size: 35px;
+    /* font-family: sans-serif; */
+    font-weight: bolder;
+    color: black;
+}
+
+#Qr_Download_Button:hover{
+    color: #313030;
+    cursor: pointer;
+}
+
+
+
 
 
 
