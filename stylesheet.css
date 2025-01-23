@@ -382,7 +382,7 @@ body {
 }
 
 .QR_History_Codes {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 400px;
     width: 100%;
     display: flex;
@@ -396,7 +396,7 @@ body {
 /* QR History Codes */
 
 .History_QR_Code_A {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     height: 45px;
     width: 95%;
     position: relative;
@@ -406,16 +406,18 @@ body {
 }
 
 .QR_Code_List {
-    border: 1px solid white;
+    border: 1.5px solid #989898;
+    border-radius: 6px;
     height: 43px;
     width: 86%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+
 }
 
 .QR_Code_1 {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
     font-family: sans-serif;
     color: #c8c8c8;
