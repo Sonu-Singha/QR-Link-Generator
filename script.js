@@ -3,6 +3,15 @@
 console.log("Hey");
 
 
+
+
+
+
+
+
+
+
+
 //-----------------------------------------------------------------------------------Selecting Elements
 
 // Home Page Section
@@ -38,6 +47,8 @@ let Display_QR_Code_Container = document.body.querySelector(".Display_QR_Code_Co
 
 
 
+
+
 //-----------------------------------------------------------------------------------Saving QR Data to LocalStorage
 
 //Saving QR Code
@@ -45,12 +56,6 @@ let Display_QR_Code_Container = document.body.querySelector(".Display_QR_Code_Co
 function Save_QR_Data_to_LS(url, base64, expiry) {
     let CurrentTime = Date.now();
     let ExpiryTime = "";
-
-    // if (expiry === "lifetime") {
-    //     ExpiryTime = null;
-    // } else {
-    //     ExpiryTime = CurrentTime + expiry * 60 * 1000
-    // }
 
     console.log(expiry)
 
@@ -71,7 +76,6 @@ function Save_QR_Data_to_LS(url, base64, expiry) {
         console.log("Invalid expiry:" + expiry);
         return;
     }
-
 
 
     let New_Entry = {
@@ -118,12 +122,8 @@ function Load_QR_Data_from_LS() {
 
     localStorage.setItem("QR_History", JSON.stringify(Valid_QR_History))
     return Valid_QR_History;
-    // return QR_History || [];
 
 }
-
-
-
 
 
 
@@ -181,6 +181,7 @@ function Get_QR_Data_from_LS(QR_History) {
 }
 
 
+
 //Delete QR History Entry Function
 
 function Delete_QR_History_Entry(index) {
@@ -190,15 +191,6 @@ function Delete_QR_History_Entry(index) {
 
     Get_QR_Data_from_LS(Load_QR_Data_from_LS());
 }
-
-
-// Add delete functionality
-
-// let DeleteButtons = document.querySelector(".QR_Remove_Btn");
-
-// DeleteButtons.addEventListener("click", function () {
-//     Delete_QR_History_Entry();
-// })
 
 
 QR_Code_History_Names.addEventListener("click", function (event) {
@@ -250,6 +242,7 @@ function QR_Code_Generator(url, expiry) {
 
 
 
+
 //-----------------------------------------------------------------------------------QR Generate Button Event Listener
 
 QR_Generate_Button.addEventListener("click", function () {
@@ -273,12 +266,6 @@ QR_Generate_Button.addEventListener("click", function () {
 
     QR_Code_Generator(URL, Expiry_in_Minute);
 
-
-
-    // Dyanmic_QR_Code_Downloader();
-
-
-
     Display_QR_Code_Container.style.display = "flex";
     Main_QR_Box.style.gap = "1.5vh";
     Main_QR_Box.style.height = "95vh";
@@ -297,6 +284,7 @@ QR_Generate_Button.addEventListener("click", function () {
 
 //-----------------------------------------------------------------------------------Event Listener for Pop-Up Page
 
+
 // Opening Pop-up page
 
 History_Button.addEventListener("click", function () {
@@ -313,8 +301,21 @@ History_Button.addEventListener("click", function () {
     Get_QR_Data_from_LS(Valid_QR_History);
 })
 
+
 // Closing Pop-up page
 
 Close_Button.addEventListener("click", function () {
     Pop_Up_Page.style.display = "none";
 })
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------CODE ENDs HERE----------------------------------------
