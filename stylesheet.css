@@ -1,6 +1,14 @@
 /* CODE STARTS FROM HeRe */
 
 
+
+
+
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -26,11 +34,14 @@ body {
 
 
 
+
+
+
+
 /*-----------------------------------------------------------------------MAIN BOX CODE CONTENT */
 
 
 .Main_Box {
-    /* border: 2px solid red; */
     height: 99vh;
     width: 68vw;
     display: flex;
@@ -40,7 +51,6 @@ body {
 
 .Main_QR_Box {
     border: 1px solid black;
-    /* height: 95vh; */
     height: 75vh;
     width: 50vw;
     background-color: rgb(95 124 193 / 83%);
@@ -51,13 +61,13 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2.5vh;
-    /* gap: 1.5vh; */
 }
+
+
 
 /* QR Text Title Section */
 
 .QR_Text_Container {
-    /* border: 1px solid red; */
     height: 60px;
     width: 100%;
     display: flex;
@@ -67,16 +77,16 @@ body {
 }
 
 .QR_Text {
-    /* border: 1px solid green; */
     color: #212121;
     font-size: 35px;
     font-weight: 550;
 }
 
+
+
 /* QR Short Note Section */
 
 .Text_Note_Container {
-    /* border: 1px solid red; */
     height: auto;
     width: 82%;
     display: flex;
@@ -87,21 +97,20 @@ body {
 }
 
 .Text_Note {
-    /* border: 1px solid green; */
     font-size: 14.5px;
     text-align: center;
 }
 
+
+
 /* QR URL Section */
 
 .URL_Section {
-    /* border: 1px solid red; */
     width: 100%;
     height: 50px;
 }
 
 .URL_Area {
-    /* border: 1px solid black; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -110,7 +119,6 @@ body {
 }
 
 #URL_Input {
-    /* border: 1px solid green; */
     height: 42px;
     width: 91%;
     outline: none;
@@ -122,17 +130,17 @@ body {
     font-size: 14px;
 }
 
+
+
 /* Expiration Select Section */
 
 .Select_Section {
-    /* border: 1px solid red; */
     width: 100%;
     height: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .Select_Area {
-    /* border: 1px solid black; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -141,7 +149,6 @@ body {
 }
 
 #Select_Expiry {
-    /* border: 1px solid green; */
     height: 42px;
     width: 92.5%;
     outline: none;
@@ -153,18 +160,17 @@ body {
     font-size: 14px;
 }
 
+
+
 /* Generate Button Section */
 
 .Generate_Container {
-    /* display: none; */
-    /* border: 1px solid red; */
     width: 100%;
     height: 75px;
     font-family: sans-serif;
 }
 
 .Generate_Area {
-    /* border: 1px solid black; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -173,7 +179,6 @@ body {
 }
 
 #Generate_Btn {
-    /* border: 1px solid green; */
     height: 50px;
     width: 175px;
     font-size: 16px;
@@ -198,20 +203,16 @@ body {
 
 
 
-
 /*-----------------------------------------------------------------------QR CODE GENERATION SECTION */
 
 .Display_QR_Code_Container {
-    /* border: 2px solid #212121; */
     height: 200px;
     width: 100%;
     justify-content: center;
     display: none;
-    /* display: flex; */
 }
 
-.QR_View_Area{
-    /* border: 1px solid black; */
+.QR_View_Area {
     height: 100%;
     width: 42%;
     display: flex;
@@ -220,15 +221,12 @@ body {
     left: 27px;
 }
 
-.QrCode{
-    /* border-radius: 52px; */
-    /* filter: invert(100%); */
+.QrCode {
     height: 100%;
     width: 75%;
 }
 
-.QrDWNLD{
-    /* border: 1px solid green; */
+.QrDWNLD {
     height: 100%;
     width: 20%;
     display: flex;
@@ -236,19 +234,17 @@ body {
     align-items: center;
 }
 
-#Qr_Download_Button{
-    /* border: 1px solid black; */
+#Qr_Download_Button {
     border: none;
     height: 40px;
     width: 26px;
     background: none;
     font-size: 35px;
-    /* font-family: sans-serif; */
     font-weight: bolder;
     color: black;
 }
 
-#Qr_Download_Button:hover{
+#Qr_Download_Button:hover {
     color: #313030;
     cursor: pointer;
 }
@@ -262,35 +258,31 @@ body {
 
 
 
-
 /*-----------------------------------------------------------------------SIDE TOOL CODE SECTION */
 
 .Side_Tool_Box {
-    /* border: 2px solid black; */
     height: 99vh;
     width: 30vw;
 }
 
+
+
 /* History Button Section */
 
 .Tool_Container {
-    /* border: 1px solid red; */
     height: 45px;
     width: 100%;
 }
 
 .History_Area {
-    /* border: 1px solid green; */
     width: 100%;
     height: 100%;
     display: flex;
-    /* gap: 2px; */
     justify-content: end;
     align-items: center;
 }
 
 #History_Img {
-    /* border: 1px solid black; */
     height: 35px;
     width: 35px;
 }
@@ -318,10 +310,11 @@ body {
 
 
 
+
+
 /*-----------------------------------------------------------------------POP-UP PAGE SECTION */
 
 .Pop-Up_Section {
-    /* border: 1px solid red; */
     position: fixed;
     left: 0;
     top: 0;
@@ -334,13 +327,13 @@ body {
     align-items: center;
     z-index: 10;
     display: none;
-    /* display: flex; */
 }
+
+
 
 /* QR History Section */
 
 .QR_History {
-    /* border: 1px solid white; */
     height: 86vh;
     width: 33vw;
     background-color: #212121;
@@ -353,7 +346,6 @@ body {
 }
 
 .QR_Title_Tag_Container {
-    /* border: 1px solid blue; */
     height: 85px;
     width: 100%;
     display: flex;
@@ -363,7 +355,6 @@ body {
 }
 
 .QR_History_Title {
-    /* border: 1px solid red; */
     height: 40px;
     width: 90%;
     font-family: Arial, Helvetica, sans-serif;
@@ -373,7 +364,6 @@ body {
 }
 
 .QR_History_Tagline {
-    /* border: 1px solid red; */
     height: 25px;
     width: 89%;
     font-family: Arial, Helvetica, sans-serif;
@@ -382,7 +372,6 @@ body {
 }
 
 .QR_History_Codes {
-    /* border: 1px solid red; */
     height: 400px;
     width: 100%;
     display: flex;
@@ -393,10 +382,11 @@ body {
 
 }
 
+
+
 /* QR History Codes */
 
 .History_QR_Code_A {
-    /* border: 1px solid yellow; */
     height: 45px;
     width: 95%;
     position: relative;
@@ -417,7 +407,6 @@ body {
 }
 
 .QR_Code_1 {
-    /* border: 1px solid green; */
     width: 100%;
     font-family: sans-serif;
     color: #c8c8c8;
@@ -425,7 +414,6 @@ body {
 }
 
 .QR_Code_Remove_Button {
-    /* border: 1px solid white; */
     height: 43px;
     width: 11%;
     display: flex;
@@ -434,9 +422,6 @@ body {
 }
 
 .QR_Remove_Btn {
-    /* border: 1px solid green; */
-    /* height: 100%; */
-    /* width: 80%; */
     font-size: 35px;
     font-weight: bold;
     font-family: sans-serif;
@@ -448,10 +433,12 @@ body {
     color: #c5c5c5;
 }
 
+
+
+
 /* History Section Close Section */
 
 .QR_History_Close_Container {
-    /* border: 1px solid white; */
     height: 50px;
     width: 50px;
     display: flex;
@@ -463,7 +450,6 @@ body {
 }
 
 #Close_Button {
-    /* border: 1px solid red; */
     height: 46px;
     width: 42px;
     font-size: 45px;
@@ -478,3 +464,13 @@ body {
     cursor: pointer;
     color: #ff5454;
 }
+
+
+
+
+
+
+
+
+
+/*                              CODE ENDs HeRe                             */
