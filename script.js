@@ -135,6 +135,7 @@ function Get_QR_Data_from_LS(QR_History) {
 
     if (QR_History.length === 0) {
         QR_Code_History_Names.innerHTML = "No QR Codes Found";
+        QR_Code_History_Names.style.fontFamily="Arial"
         return;
     }
 
