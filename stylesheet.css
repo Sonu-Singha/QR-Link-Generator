@@ -372,6 +372,7 @@ body {
 }
 
 .QR_History_Codes {
+    overflow-y: scroll;
     height: 400px;
     width: 100%;
     display: flex;
@@ -380,6 +381,22 @@ body {
     align-items: center;
     gap: 10px;
 
+}
+
+
+/* Webkit Socket Scrollbar Section */
+
+.QR_History_Codes::-webkit-scrollbar{
+    width: 3.5px;
+}
+
+.QR_History_Codes::-webkit-scrollbar-thumb{
+    background-color: #adadad;
+    border-radius: 10px;
+}
+
+.QR_History_Codes::-webkit-scrollbar-track{
+    background-color: #212121;
 }
 
 
